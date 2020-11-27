@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    padding: 0em;
+    margin: 0em;
+    font-family: 'Quicksand', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em;
+    background-color: #3B3B3B;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.233);
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+#nav-logo{
+    height: 2em;
+}
+#footer-logo{
+    height: 2em;
+    margin: 1rem 0;
+}
+.container{
+    width: 90vw;
+    margin: 0 auto 1em;
+    background-color: white;
+    box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, 0.383);
+    padding : 0;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+}
+html{
+    min-height: 100vh;
+}
+h3{
+    margin: 0.5em 0;
+}
+.white{
+    height: 5em;
+}
+.big{
+    height: 40vh;
+        width: 100%;
+    box-sizing: border-box;
+    object-fit: cover;  
+    border-bottom: 3px;
+}
+.bigImage{
+    width: 100%;
+    line-height: 0em;
+}
+.smallImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+
+.small{
+    object-fit: cover;
+    width: 25%;
+    box-sizing: border-box;
+    border: rgb(255, 255, 255) 1px solid;
+    transition: opacity 0.3s;
+
+}
+.small:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.fadeIn{
+opacity: 0;
+animation: fade 0.5s forwards;
+}
+.alamat{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.733);
+    font-size: 14px;
+}
+.active{
+    opacity: 0.5;
+}
+.fasilitas{
+    padding: 0.5em 0;
+    font-size: 15px;
+}
+.fasilitas ul{
+    padding-left: 2em;
+    list-style-position: outside;
+}
+.fasilitas ul li{
+}
+.description-container{
+    margin: 0.2em 0.7em;
+    padding: 0.3em 0.5em;
+    border-radius: 13px;
+    background-color: white;
+}
+#whatsapp-hubungi{
+    width: 2rem;
+    filter: invert();
+    position: relative;
+    top: 0.15em;
+}
+.info-pemesanan{
+    margin: 1em 0;
+    display: flex;
+    padding: 1em 0;
+    border-radius: 13px;
+    box-shadow: 0px 3px 6px 2px rgba(0, 0, 0, 0.233);
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+}
+#klik-whatsapp{
+    margin: 1rem 0;
+    width: 80%;
+    border-radius: 8px;
+    padding: 0.15em;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    display: block;
+    background-color: rgb(88, 136, 88);
+}
+#nomor{
+    position: relative;
+    bottom: 0.15em;
+}
+@keyframes fade{
+    to{
+        opacity: 1;
+    }
+}
+
+/*float-pack*/
+.hamburger-list{
+    background-color: #3B3B3B;
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25vh;
+    font-size: 1.5rem;
+}
+#hamburger{
+    display: none;
+}
+#hamburger .hamburger-line{
+    background-color: white;
+    width: 2rem;
+    margin: 0.5rem 0;
+    height: 0.2rem;
+}
+#non-logo{
+    padding: 0;
+align-items: center;
+display: flex;
+}
+#non-logo div{
+}
+#non-logo a{
+    margin: 0 2em;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.float{
+    position: fixed;
+    width: 100%;
+    background-color: #3B3B3B;
+    z-index: 4;
+}
+footer{
+    color: rgb(255, 255, 255);
+    background-color: #3B3B3B;
+    padding: 1em 1em;
+    line-height: 1.4em;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+#flaticon{
+    text-align: center;
+    margin-top: 3em;
+    font-size: 15px;
+}
+#copyright{
+    text-align: center;
+}
+@media only screen and (max-width:600px){
+    #non-logo{
+        display: none;
+    }
+    #hamburger{
+        display: block;
+    }
+    .showHam{
+        display: block;
+        width: 100vw;
+    }
+    .hamburger-list a{
+        color: white;
+    }
+    body .flex{
+        display: flex;
+    }
+
+}
+/*Hamburger*/
+
+@media only screen and (min-width: 600px) {
+    .big{
+        width: 100%;
+        height: 70vh;
+    }
+    .container{
+        width: 80%;
+    }
+    #klik-whatsapp{
+        width: 30%;
+    }
+    .description-container{
+        width: 80%;
+        margin: 1em auto;
+        padding: 0.7em 1em;
+    }
+    .small {
+        width: 9.85vw;
+    }
+}
